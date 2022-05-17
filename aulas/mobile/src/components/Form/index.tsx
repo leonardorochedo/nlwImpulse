@@ -43,7 +43,7 @@ export function Form({ feedbackType, onFeedbackCanceled, onFeedbackSent }: Props
         if (isSendingFeedback) {
             return;
         }
-
+        
         setIsSendingFeedback(true);
         const screenshotBase64 = screenshot && await FileSystem.readAsStringAsync(screenshot, { encoding: 'base64' });
 
